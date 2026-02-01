@@ -31,5 +31,5 @@
 
 ---
 <p align="center">
-  <a href="https://youtu.be/xm3YgoEiEDc?si=lAMrqbyASX_SwnHe">Important announcement...</a>
+  <a href="https://youtu.be/xm3YgoEiEDc?si=lAMrqbyASX_SwnHe">Important announcement.</a>
 </p>
