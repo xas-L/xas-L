@@ -1,16 +1,23 @@
-## Hi there 👋
+<p align="center">
+  <img src="dist/header.svg" alt="Saxon Lee header" />
+</p>
 
-<!--
-**xas-L/xas-L** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <img src="dist/projects.svg" alt="Flagship projects" />
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Quick links
+
+- Options desk analytics: https://github.com/xas-L/options-desk-analytics  
+- Systematic commodities: https://github.com/xas-L/Systematic-Commodities  
+- tinyML: https://github.com/xas-L/tinyML  
+- mm sim engine: https://github.com/xas-L/mm-sim-engine  
+
+---
+
+### How this works
+
+- `scripts/build.ts` generates the SVG blocks into `dist/`
+- `.github/workflows/render.yml` runs daily (and manually) to regenerate + commit changes

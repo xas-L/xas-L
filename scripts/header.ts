@@ -1,0 +1,36 @@
+export function headerSvg() {
+  return `
+<svg width="1200" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Saxon Lee header">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="220" rx="18" fill="url(#bg)" stroke="#30363d"/>
+
+  <text x="60" y="95"
+        font-size="48"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI"
+        fill="#e6edf3"
+        font-weight="700">
+    Saxon Lee
+  </text>
+
+  <text x="60" y="140"
+        font-size="18"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI"
+        fill="#8b949e">
+    Quant dev / research tooling • options analytics • systematic futures • market microstructure • C++/Python
+  </text>
+
+  <text x="60" y="180"
+        font-size="14"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas"
+        fill="#58a6ff">
+    options → commodities → microstructure → systems
+  </text>
+</svg>
+`.trim();
+}
