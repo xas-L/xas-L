@@ -16,14 +16,14 @@ const cards: Card[] = [
   {
     title: "Systematic-Commodities",
     url: "https://github.com/xas-L/Systematic-Commodities",
-    desc: "Curve RV research for commodity futures: true curves → calendars/butterflies → cost-aware walk-forwards + attribution.",
+    desc: "Prod-style curve RV research for commodity futures: true curves → calendars/butterflies → cost-aware walk-forwards + attribution.",
     tags: "research • futures • portfolio"
   },
   // Bottom row
   {
     title: "tinyML",
     url: "https://github.com/xas-L/tinyML",
-    desc: "C++ CPU NN library: 2D tensors + arena allocators + DAG autograd + SGD/Adam + MNIST + save/load weights.",
+    desc: "C++ CPU NN library: 2D tensors + arena allocators + DAG autograd + SGD/Adam + MNIST loader + save/load weights.",
     tags: "c++ • autograd • ml"
   },
   {
@@ -45,18 +45,16 @@ export function projectsSvg() {
   const cardH = (H - 2 * pad - gap) / 2;
 
   const slots = [
-    { x: pad, y: pad },                        // top-left
-    { x: pad + cardW + gap, y: pad },          // top-right
-    { x: pad, y: pad + cardH + gap },          // bottom-left
-    { x: pad + cardW + gap, y: pad + cardH + gap } // bottom-right
+    { x: pad, y: pad },                              // top-left
+    { x: pad + cardW + gap, y: pad },                // top-right
+    { x: pad, y: pad + cardH + gap },                // bottom-left
+    { x: pad + cardW + gap, y: pad + cardH + gap }   // bottom-right
   ];
 
   return `
-<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
+<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flagship projects">
   <rect x="0" y="0" width="${W}" height="${H}" rx="18" fill="#0b0f14" stroke="#30363d"/>
-  ${cards
-    .map((c, i) => card(slots[i].x, slots[i].y, cardW, cardH, c))
-    .join("\n")}
+  ${cards.map((c, i) => card(slots[i].x, slots[i].y, cardW, cardH, c)).join("\n")}
 </svg>
 `.trim();
 }
@@ -88,7 +86,7 @@ function escapeXml(s: string) {
     .replaceAll('"', "&quot;");
 }
 
-// Tiny SVG word-wrap: uses a crude width estimate + tspans.
+// Tiny SVG word-wrap: crude width estimate + tspans.
 function wrapText(
   x: number,
   y: number,

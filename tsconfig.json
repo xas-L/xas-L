@@ -7,8 +7,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "dist-ts",
-    "rootDir": "."
+    "types": ["node"]
   },
   "include": ["src/**/*.ts", "scripts/**/*.ts"]
 }

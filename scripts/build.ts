@@ -1,6 +1,6 @@
 import { mkdirSync, writeFileSync } from "node:fs";
-import { headerSvg } from "../src/render/header.ts";
-import { projectsSvg } from "../src/render/projects.ts";
+import { headerSvg } from "../src/render/header.js";
+import { projectsSvg } from "../src/render/projects.js";
 
 mkdirSync("dist", { recursive: true });
 
