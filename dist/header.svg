@@ -1,4 +1,8 @@
-<svg width="1200" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="330" viewBox="0 0 1200 330"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     role="img"
+     aria-label="Saxon Lee header">
   <defs>
     <linearGradient id="bg" x1="0" x2="1">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -6,17 +10,52 @@
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="1200" height="220" rx="18" fill="url(#bg)" stroke="#30363d"/>
+  <rect x="0" y="0" width="1200" height="330" rx="18" fill="url(#bg)" stroke="#30363d"/>
 
-  <text x="60" y="95" font-size="48" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI" fill="#e6edf3" font-weight="700">
+  <!-- Name -->
+  <text x="60" y="92"
+        font-size="48"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI"
+        fill="#e6edf3"
+        font-weight="700">
     Saxon Lee
   </text>
 
-  <text x="60" y="140" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI" fill="#8b949e">
-    Quant dev / research tooling • options analytics • systematic futures • market microstructure • C++/Python
+  <!-- Short intro -->
+  <text x="60" y="126"
+        font-size="16"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI"
+        fill="#c9d1d9">
+    Mathematics graduate (University of Bath) • London, UK
   </text>
 
-  <text x="60" y="180" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas" fill="#58a6ff">
-    options → commodities → microstructure → systems
+  <!-- Main tagline (wrapped) -->
+  <text x="60" y="165"
+        font-size="18"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI"
+        fill="#8b949e">
+    <tspan x="60" dy="0">Quant dev / research desk projects • options analytics • systematic futures • market microstructure</tspan>
+    <tspan x="60" dy="24">Python-first; C++ improving steadily through self-teaching</tspan>
   </text>
+
+  <!-- Footer line (wrapped, monospace) -->
+  <text x="60" y="228"
+        font-size="14"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas"
+        fill="#58a6ff">
+    <tspan x="60" dy="0">options → commodities → microstructure → ML library</tspan>
+    <tspan x="60" dy="20">+ other problems I find interesting :)</tspan>
+  </text>
+
+  <!-- Link (at least 2 lines below the final blue text) -->
+  <a xlink:href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1&pp=ygUJUklDSyBST0xMoAcB" target="_blank" rel="noopener noreferrer">
+    <text x="60" y="308"
+          font-size="16"
+          font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI"
+          fill="#58a6ff"
+          text-decoration="underline"
+          font-weight="600">
+      Important announcement...
+    </text>
+  </a>
 </svg>

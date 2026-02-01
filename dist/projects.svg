@@ -7,12 +7,12 @@
           font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">options-desk-analytics</text>
 
     <text x="46" y="106" font-size="14" fill="#8b949e" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">
-      <tspan x="46" dy="0">Options desk analytics toolkit: barrier MC pricer + Black–Scholes</tspan>
-      <tspan x="46" dy="22">IV/Greeks + chain → risk report scripts.</tspan>
+      <tspan x="46" dy="0">Options desk analytics toolkit: barrier Monte Carlo + Black–Scholes pricer</tspan>
+      <tspan x="46" dy="22">IV solver, Greeks, chain → risk reports (PnL/exposures)</tspan>
     </text>
 
     <text x="46" y="229" font-size="13" fill="#c9d1d9" font-weight="600"
-          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas">python • derivatives • risk</text>
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas"> Python • Derivatives • Market-making</text>
   </a>
 
   <a href="https://github.com/xas-L/Systematic-Commodities">
@@ -21,12 +21,12 @@
           font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">Systematic-Commodities</text>
 
     <text x="631" y="106" font-size="14" fill="#8b949e" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">
-      <tspan x="631" dy="0">Prod-style curve RV research for commodity futures: true curves →</tspan>
+      <tspan x="631" dy="0">Prod-style curve RV research framework for commodity futures: true curves →</tspan>
       <tspan x="631" dy="22">calendars/butterflies → cost-aware walk-forwards + attribution.</tspan>
     </text>
 
     <text x="631" y="229" font-size="13" fill="#c9d1d9" font-weight="600"
-          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas">research • futures • portfolio</text>
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas"> Quant research • Futures • Portfolio</text>
   </a>
 
   <a href="https://github.com/xas-L/tinyML">
@@ -36,11 +36,11 @@
 
     <text x="46" y="351" font-size="14" fill="#8b949e" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">
       <tspan x="46" dy="0">C++ CPU NN library: 2D tensors + arena allocators + DAG autograd +</tspan>
-      <tspan x="46" dy="22">SGD/Adam + MNIST loader + save/load weights.</tspan>
+      <tspan x="46" dy="22">SGD/Adam + MNIST loader + save/load weights (I'm improving my C++ slowly pls bear with).</tspan>
     </text>
 
     <text x="46" y="474" font-size="13" fill="#c9d1d9" font-weight="600"
-          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas">c++ • autograd • ml</text>
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas"> C++ • Autograd • ML</text>
   </a>
 
   <a href="https://github.com/xas-L/mm-sim-engine">
@@ -54,6 +54,6 @@
     </text>
 
     <text x="631" y="474" font-size="13" fill="#c9d1d9" font-weight="600"
-          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas">c++ • microstructure • sim</text>
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas">C++ • Market microstructure • HFT/MM</text>
   </a>
 </svg>

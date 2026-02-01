@@ -30,12 +30,3 @@
 </table>
 
 ---
-
-## Quick links
-
-- Options desk analytics: https://github.com/xas-L/options-desk-analytics  
-- Systematic commodities: https://github.com/xas-L/Systematic-Commodities  
-- tinyML: https://github.com/xas-L/tinyML  
-- mm sim engine: https://github.com/xas-L/mm-sim-engine  
-
----
