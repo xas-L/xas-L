@@ -1,8 +1,4 @@
-<svg width="1200" height="330" viewBox="0 0 1200 330"
-     xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     role="img"
-     aria-label="Saxon Lee header">
+<svg width="1200" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Saxon Lee header">
   <defs>
     <linearGradient id="bg" x1="0" x2="1">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -10,7 +6,7 @@
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="1200" height="330" rx="18" fill="url(#bg)" stroke="#30363d"/>
+  <rect x="0" y="0" width="1200" height="280" rx="18" fill="url(#bg)" stroke="#30363d"/>
 
   <!-- Name -->
   <text x="60" y="92"
@@ -26,7 +22,7 @@
         font-size="16"
         font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI"
         fill="#c9d1d9">
-    Mathematics graduate (University of Bath) • London, UK
+    Mathematics graduate (University of Bath) with investment desk experience • London, UK
   </text>
 
   <!-- Main tagline (wrapped) -->
@@ -43,19 +39,6 @@
         font-size="14"
         font-family="ui-monospace, SFMono-Regular, Menlo, Consolas"
         fill="#58a6ff">
-    <tspan x="60" dy="0">options → commodities → microstructure → ML library</tspan>
-    <tspan x="60" dy="20">+ other problems I find interesting :)</tspan>
+    <tspan x="60" dy="0">options → commodities → microstructure → ML library and other problems I find interesting :)</tspan>
   </text>
-
-  <!-- Link (at least 2 lines below the final blue text) -->
-  <a xlink:href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1&pp=ygUJUklDSyBST0xMoAcB" target="_blank" rel="noopener noreferrer">
-    <text x="60" y="308"
-          font-size="16"
-          font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI"
-          fill="#58a6ff"
-          text-decoration="underline"
-          font-weight="600">
-      Important announcement...
-    </text>
-  </a>
 </svg>
