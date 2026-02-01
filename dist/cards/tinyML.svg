@@ -1,0 +1,13 @@
+<svg width="567" height="227" viewBox="0 0 567 227" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="tinyML card">
+  <rect x="0" y="0" width="567" height="227" rx="16" fill="#0d1117" stroke="#30363d"/>
+
+  <text x="22" y="54" font-size="22" fill="#58a6ff" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">tinyML</text>
+
+  <text x="22" y="88" font-size="14" fill="#8b949e" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">
+  <tspan x="22" dy="0">C++ CPU NN library: 2D tensors + arena allocators + DAG autograd +</tspan><tspan x="22" dy="22">SGD/Adam + MNIST loader + save/load weights.</tspan>
+</text>
+
+  <text x="22" y="205" font-size="13" fill="#c9d1d9" font-weight="600"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas">c++ • autograd • ml</text>
+</svg>

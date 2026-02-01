@@ -1,10 +1,14 @@
 import { mkdirSync, writeFileSync } from "node:fs";
-import { headerSvg } from "../src/render/header.js";
-import { projectsSvg } from "../src/render/projects.js";
+import { headerSvg } from "../src/render/header";
+import { flagshipCards, projectCardSvg } from "../src/render/projects";
 
 mkdirSync("dist", { recursive: true });
+mkdirSync("dist/cards", { recursive: true });
 
 writeFileSync("dist/header.svg", headerSvg(), "utf8");
-writeFileSync("dist/projects.svg", projectsSvg(), "utf8");
 
-console.log("Wrote dist/header.svg and dist/projects.svg");
+for (const c of flagshipCards) {
+  writeFileSync(`dist/cards/${c.slug}.svg`, projectCardSvg(c), "utf8");
+}
+
+console.log("Wrote dist/header.svg and dist/cards/*.svg");

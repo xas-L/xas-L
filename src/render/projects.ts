@@ -1,19 +1,22 @@
 type Card = {
-  title: string;
+  slug: string;   // used for filename
+  title: string;  // display name
   url: string;
   desc: string;
   tags: string;
 };
 
-const cards: Card[] = [
+export const flagshipCards: Card[] = [
   // Top row
   {
+    slug: "options-desk-analytics",
     title: "options-desk-analytics",
     url: "https://github.com/xas-L/options-desk-analytics",
     desc: "Options desk analytics toolkit: barrier MC pricer + Black–Scholes IV/Greeks + chain → risk report scripts.",
     tags: "python • derivatives • risk"
   },
   {
+    slug: "Systematic-Commodities",
     title: "Systematic-Commodities",
     url: "https://github.com/xas-L/Systematic-Commodities",
     desc: "Prod-style curve RV research for commodity futures: true curves → calendars/butterflies → cost-aware walk-forwards + attribution.",
@@ -21,12 +24,14 @@ const cards: Card[] = [
   },
   // Bottom row
   {
+    slug: "tinyML",
     title: "tinyML",
     url: "https://github.com/xas-L/tinyML",
     desc: "C++ CPU NN library: 2D tensors + arena allocators + DAG autograd + SGD/Adam + MNIST loader + save/load weights.",
     tags: "c++ • autograd • ml"
   },
   {
+    slug: "mm-sim-engine",
     title: "mm-sim-engine",
     url: "https://github.com/xas-L/mm-sim-engine",
     desc: "Market-making sandbox: LOB matching → inventory-aware quoting → regimes → markout/drawdown diagnostics.",
@@ -34,47 +39,27 @@ const cards: Card[] = [
   }
 ];
 
-export function projectsSvg() {
-  const W = 1200;
-  const H = 520;
+// Single card SVG (clickability will come from wrapping <img> with <a> in README)
+export function projectCardSvg(card: Card) {
+  const W = 567;
+  const H = 227;
 
-  const pad = 24;
-  const gap = 18;
-
-  const cardW = (W - 2 * pad - gap) / 2;
-  const cardH = (H - 2 * pad - gap) / 2;
-
-  const slots = [
-    { x: pad, y: pad },                              // top-left
-    { x: pad + cardW + gap, y: pad },                // top-right
-    { x: pad, y: pad + cardH + gap },                // bottom-left
-    { x: pad + cardW + gap, y: pad + cardH + gap }   // bottom-right
-  ];
+  const titleY = 54;
+  const descY = 88;
+  const tagsY = H - 22;
 
   return `
-<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flagship projects">
-  <rect x="0" y="0" width="${W}" height="${H}" rx="18" fill="#0b0f14" stroke="#30363d"/>
-  ${cards.map((c, i) => card(slots[i].x, slots[i].y, cardW, cardH, c)).join("\n")}
+<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${escapeXml(card.title)} card">
+  <rect x="0" y="0" width="${W}" height="${H}" rx="16" fill="#0d1117" stroke="#30363d"/>
+
+  <text x="22" y="${titleY}" font-size="22" fill="#58a6ff" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">${escapeXml(card.title)}</text>
+
+  ${wrapText(22, descY, W - 44, 14, "#8b949e", card.desc)}
+
+  <text x="22" y="${tagsY}" font-size="13" fill="#c9d1d9" font-weight="600"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas">${escapeXml(card.tags)}</text>
 </svg>
-`.trim();
-}
-
-function card(x: number, y: number, w: number, h: number, c: Card) {
-  const titleY = y + 48;
-  const descY = y + 82;
-  const tagsY = y + h - 22;
-
-  return `
-<a href="${c.url}">
-  <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="16" fill="#0d1117" stroke="#30363d"/>
-  <text x="${x + 22}" y="${titleY}" font-size="22" fill="#58a6ff" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">${escapeXml(c.title)}</text>
-
-  ${wrapText(x + 22, descY, w - 44, 14, "#8b949e", c.desc)}
-
-  <text x="${x + 22}" y="${tagsY}" font-size="13" fill="#c9d1d9" font-weight="600"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas">${escapeXml(c.tags)}</text>
-</a>
 `.trim();
 }
 
@@ -87,14 +72,7 @@ function escapeXml(s: string) {
 }
 
 // Tiny SVG word-wrap: crude width estimate + tspans.
-function wrapText(
-  x: number,
-  y: number,
-  maxW: number,
-  size: number,
-  color: string,
-  content: string
-) {
+function wrapText(x: number, y: number, maxW: number, size: number, color: string, content: string) {
   const words = content.split(/\s+/);
   const lines: string[] = [];
   let line: string[] = [];
