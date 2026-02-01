@@ -35,7 +35,7 @@
           font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">tinyML</text>
 
     <text x="46" y="351" font-size="14" fill="#8b949e" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI">
-      <tspan x="46" dy="0">C++ CPU NN library: 2D tensors + arena allocators + DAG autograd +</tspan>
+      <tspan x="46" dy="0">Jane Street inspired C++ CPU NN library: 2D tensors + arena allocators + DAG autograd +</tspan>
       <tspan x="46" dy="22">SGD/Adam + MNIST loader + save/load weights (I'm improving my C++ slowly pls bear with).</tspan>
     </text>
 
