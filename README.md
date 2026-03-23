@@ -18,7 +18,7 @@
   <tr>
     <td>
       <a href="https://github.com/xas-L/weather-commodity-forecasting">
-        <img src="dist/cards/weather-commodity-forecasting.svg" alt="tinyML" />
+        <img src="dist/cards/weather-commodity-forecasting.svg" alt="weather-commodity-forecasting" />
       </a>
     </td>
     <td>
