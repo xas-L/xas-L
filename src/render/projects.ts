@@ -20,22 +20,22 @@ export const flagshipCards: Card[] = [
     title: "Systematic-Commodities",
     url: "https://github.com/xas-L/Systematic-Commodities",
     desc: "Prod-style curve RV research for commodity futures: true curves → calendars/butterflies → cost-aware walk-forwards + attribution.",
-    tags: "research • futures • portfolio"
+    tags: "python • trading (commodity futures) • research"
   },
   // Bottom row
   {
-    slug: "tinyML",
-    title: "tinyML",
-    url: "https://github.com/xas-L/tinyML",
-    desc: "C++ CPU NN library: 2D tensors + arena allocators + DAG autograd + SGD/Adam + MNIST loader + save/load weights.",
-    tags: "c++ • autograd • ml"
+  slug: "weather-commodity-forecasting",
+  title: "weather-commodity-forecasting",
+  url: "https://github.com/xas-L/weather-commodity-forecasting",
+  desc: "Subseasonal NWP post-processing pipeline linking ERA5 atmospheric regime features to TTF gas and power price signals.",
+  tags: "python • trading (commodities) • weather forecasting"  
   },
   {
     slug: "mm-sim-engine",
     title: "mm-sim-engine",
     url: "https://github.com/xas-L/mm-sim-engine",
     desc: "Market-making sandbox: LOB matching → inventory-aware quoting → regimes → markout/drawdown diagnostics.",
-    tags: "c++ • microstructure • sim"
+    tags: "c++ • trading (microstructure) • simulation"
   }
 ];
 
